@@ -1,1 +1,9 @@
+var myTup = (Film: "Avatar", num: 4, dish: "Salad")
+let (film, num, dish) = (myTup.Film, myTup.num, myTup.dish)
+var somePerson = (Film: "Dom 2", num: 1, dish: "Icecream")
+var someTup = myTup
+myTup = somePerson
+somePerson = someTup
 
+var newTup = (num: myTup.num, num2: somePerson.num, dif: somePerson.num - myTup.num)
+print(newTup)
