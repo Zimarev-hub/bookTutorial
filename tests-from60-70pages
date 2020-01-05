@@ -1,0 +1,49 @@
+
+
+
+// Mark: Book. Task 1
+
+let x: Int
+let y: Float
+let z: Double
+x = 18
+y = 16.4
+z = 5.7
+var f: Float = Float(x) + y + Float(z)
+var i: Int   = x + Int(y) + Int(z)
+var d: Double = Double(y).truncatingRemainder(dividingBy: z)
+print("Float \(f), Double \(d), Int \(i)")
+Литерал - это тексовое значение в переменной
+
+// Mark: Book. Task 2
+
+var str: String
+var char: Character = "a"
+var one = 1
+var two = 2
+str = "String"
+print("\(str), \(char), sum: \(one + two)")
+
+// Mark: Book. Task 3
+var t = true
+var f = false
+
+let result = t == f && t == true || f == t
+
+print(result)
+
+/*
+// Mark: Book. Task 4
+ ( ( true && false ) || true )
+ true && false && true || ( true || false )
+ false || ( false || true ) && ( true && false )
+
+ answer: false
+ */
+
+
+// Mark: Book. Task 1
+var name = "Alex"
+var weight: Double = 101.4
+var height = 177
+var imt = Int(weight) / height
