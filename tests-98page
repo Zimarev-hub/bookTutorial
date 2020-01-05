@@ -1,0 +1,34 @@
+typealias Text = String
+let (one, two, three) : (Text, Text, Text)
+(one, two, three) = ("1","2","3a")
+
+switch (one, two, three) {
+case let(a,b,c):
+    if let a = Int(a){
+        print(a)
+    }
+    if let b = Int(b){
+        print(b)
+    }
+    if let c = Int(c){
+        print(c)
+    }
+default:
+    print("Oooh")
+}
+
+typealias TupleType = (numberOne: Text?, numberTwo:Text?)?
+
+var (tupOne, tupTwo, tupThree) : (TupleType, TupleType, TupleType) = (("190", "67"), (nil, nil) , ("-65", "70"))
+
+if let tupOne = tupOne {
+   print(tupOne) 
+}
+
+if let tupTwo = tupTwo {
+   print(tupTwo) 
+}
+
+if let tupThree = tupThree {
+   print(tupThree) 
+}
