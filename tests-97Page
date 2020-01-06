@@ -1,0 +1,17 @@
+typealias Operation = (operandOne: Float, operandTwo: Float, operation: Character)
+let tup: Operation = (3.1, 33, "-")
+
+switch tup {
+    case let(a , b, c) where c == "+":
+    print(a + b)
+    case let(a , b, c) where c == "/":
+    print(a / b)
+    case let(a , b, c) where c == "*":
+    print(a * b)
+    case let(a , b, c) where c == "-":
+    print(a - b)
+default:
+    print("Incorrect type")
+}
+
+var arr = [Int] ( count: 5, repeatedValue: nil)
