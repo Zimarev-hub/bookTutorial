@@ -1,0 +1,14 @@
+import Foundation
+
+typealias Chessman = [String:(alpha:Character,num:Int)?]
+
+var chess : Chessman = ["Knight":(alpha: "A", num: 1), "Queen": (alpha: "B", num: 2), "unknow": (alpha: "A", num: 2)]
+if chess["unknow"] != nil {
+    print("Figure is live")
+} else {
+    print("Figure is dead")
+}
+
+for item in chess.keys {
+    print(item)
+}
